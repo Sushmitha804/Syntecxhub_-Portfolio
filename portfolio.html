@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sushmitha S | Portfolio</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    /* About */
+    .about p {
+      max-width: 800px;
+      color: var(--gray);
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Contact */
+    .contact p {
+      margin-bottom: 0.5rem;
+      color: var(--gray);
+    }
+
+    footer {
+      text-align: center;
+      background: var(--dark);
+      color: white;
+      padding: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Sushmitha S</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am Sushmitha S, a Computer Science and Engineering student (2022–2026)
+    with a strong interest in Web Development, UI/UX Design, and Database
+    Engineering. I enjoy building responsive websites and using technology
+    to solve real-world problems.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Java</div>
+    <div class="skill">C</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">PHP</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">UI / UX Design</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <h3>Smart Stick for Blind People</h3>
+      <p>
+        Designed a smart stick using sensor technology to help visually
+        impaired users detect obstacles and navigate safely, promoting
+        independence and accessibility.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Sentiment Analysis</h3>
+      <p>
+        Built an NLP-based sentiment analysis model to classify text as
+        positive, negative, or neutral, including emoji-based emotion
+        detection.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: sushmithas1902@gmail.com</p>
+  <p>Phone: 6383889611</p>
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/sushmitha-s-8a0611300" target="_blank">
+      linkedin.com/in/sushmitha-s
+    </a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Sushmitha S | Portfolio</p>
+</footer>
+
+</body>
+</html>
